@@ -1,0 +1,387 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: "Colgent";
+  src: url("../public//fonts//Colgent.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@500&display=swap');
+}
+
+.notconvertedBg {
+  background-color: rgba(234, 84, 85, 0.12);
+}
+
+.convertedBg {
+  background-color: rgba(0, 207, 232, 0.12);
+}
+
+.customerBg {
+  background-color: rgba(115, 103, 240, 0.12);
+}
+
+.revenueBg {
+  background-color: rgba(40, 199, 111, 0.12);
+}
+
+.averageSelling {
+  background-color: rgba(64, 1, 32, 0.12);
+}
+
+.pendingBg {
+  background-color: rgba(167, 21, 21, 0.12);
+}
+
+.processingBg {
+  background-color: rgba(255, 153, 32, 0.12);
+}
+
+#diamond {
+  accent-color: #400120;
+}
+
+#gold-order {
+  accent-color: #400120;
+}
+
+
+
+.progress-div {
+  border-radius: 0.5rem;
+}
+
+.progress {
+  height: 5px;
+  border-radius: 1rem;
+  transition: 1s ease;
+  transition-delay: 0.5s;
+}
+
+.page-item {
+  background-color: #400120;
+}
+
+.popBgTransparent {
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.popBgBlack {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.apexcharts-toolbar {
+  visibility: hidden;
+}
+
+.email {
+  position: relative;
+  animation-name: Email;
+  animation-duration: 0.5s;
+}
+
+@keyframes Email {
+  0% {
+    right: 1000px;
+    top: 0px;
+  }
+
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  /* background: #EEEEEE; */
+  background: #ffffff;
+  font-family: 'Montserrat', sans-serif, 'Colgent';
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.otpclass {
+  height: '55px';
+  width: '55px';
+  background-color: '#D9D9D9';
+}
+
+.cart {
+  position: relative;
+  animation-name: example;
+  transition: all 0.5s ease;
+
+}
+
+@keyframes example {
+  0% {
+
+    left: 1000px;
+    top: 0px;
+  }
+
+  100% {
+
+    left: 0px;
+    top: 0px;
+  }
+
+}
+
+.bubble .slide {
+  min-width: 90% !important;
+  margin-right: 20px !important;
+}
+
+.fc {
+  background-color: white;
+  padding: 10px;
+
+}
+
+.fc .fc-toolbar {
+  font-size: 14px;
+}
+
+.fc .fc-toolbar .fc-toolbar-chunk:first-child {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fc .fc-toolbar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  flex-direction: row !important;
+}
+
+.fc .fc-toolbar .fc--button:empty,
+.fc .fc-toolbar .fc-toolbar-chunk:empty {
+  display: none;
+}
+
+.fc .fc-toolbar .fc-button-group .fc-sidebarToggle-button {
+  background-color: transparent !important;
+}
+
+.fc .fc-toolbar .fc-button-group .fc-sidebarToggle-button {
+  color: #6e6b7b !important;
+}
+
+.fc .fc-toolbar .fc-button-group .fc-button-primary.fc-sidebarToggle-button svg {
+  height: 21px;
+  width: 21px;
+  font-size: 21px;
+}
+
+.fc .fc-button {
+  border: none !important;
+}
+
+.fc .fc-toolbar .fc-prev-button,
+[dir] .fc .fc-toolbar .fc-next-button {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.fc .fc-toolbar .fc-prev-button,
+[dir] .fc .fc-toolbar .fc-next-button {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.fc .fc-toolbar .fc-prev-button .fc-icon,
+.fc .fc-toolbar .fc-next-button .fc-icon {
+  color: #6e6b7b;
+}
+
+.fc .fc-toolbar .fc-next-button {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.25em !important;
+  margin: 0;
+}
+
+.fc .fc-toolbar .fc-toolbar-title {
+  margin-left: 0.25rem;
+}
+
+.fc-toolbar-chunk .fc-button-group {
+  margin-top: 1rem;
+}
+
+.hero-pattern {
+  background-image: linear-gradient(to right, #400120 0%, #856C78 100%);
+}
+
+.sidebar {
+  position: relative;
+  animation-name: example;
+  /* animation-duration: 0.25s; */
+  /* animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+
+}
+
+@keyframes example {
+  0% {
+
+    right: 1000px;
+    top: 0px;
+
+  }
+
+  100% {
+
+    right: 0px;
+    top: 0px;
+
+
+  }
+
+}
+
+.vertical-timeline-element-content {
+  box-shadow: none !important;
+  padding: 0% !important;
+  background-color: none !important;
+}
+
+.vertical-timeline::before {
+  background-color: #400120 !important;
+  /* height: 76.50% !important; */
+  width: 3px !important;
+}
+
+
+
+.vertical-timeline-element-icon {
+  box-shadow: none !important;
+
+}
+
+.vertical-timeline-element {
+  margin: 0% !important;
+}
+
+.vertical-timeline {
+  padding: 0% !important;
+}
+
+.vertical-timeline::after {
+  background-color: #40012054 !important;
+  width: 3px !important;
+}
+
+ #video{
+  align-self: center !important;
+  width:200px !important;
+  height: 200px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  left:0px !important;
+  right:0px !important;
+  top:0px !important;
+  bottom:0px !important;
+  
+}
+
+.overtext
+  {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.overtextreview
+  {
+    width:80%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; 
+  white-space: pre-wrap; 
+}
+
+.overTextCart{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; 
+  white-space: pre-wrap; 
+}
+.overTextCartDesc{
+  width:80%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; 
+  white-space: pre-wrap; 
+}
+
+.prodList {
+  margin-top: 0px !important;
+}
+
+.sc-gswNZR {
+  /* background-color: rgba(64, 1, 32, 0.2) ; */
+  background-color: white;
+  box-shadow: 5px 5px 10px #bfbfbf;
+}
+
+
+
+/*desktop version mode*/
+
+.desktop-version {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes  animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
